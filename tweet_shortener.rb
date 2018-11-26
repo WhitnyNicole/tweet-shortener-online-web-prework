@@ -20,8 +20,8 @@ end
       if x == words 
       array[index] = dictionary[x]
       end
-      end
-      end
+    end
+  end
 array.join(" ")
 end
  def bulk_tweet_shortener (array)
