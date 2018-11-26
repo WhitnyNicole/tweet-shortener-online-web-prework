@@ -40,17 +40,18 @@ array.each_with_index do |tweet, index|
   end
 end
  def selective_tweet_shortener (tweet)
-if tweet.length > 140
-  word_substituter(tweet)
-else 
- tweet
+    if tweet.length > 140
+      word_substituter(tweet)
+    else 
+      tweet
+    end
 end
-end
+ 
  def shortened_tweet_truncator (tweet)
    if tweet.length > 140
-   tweet =  word_substituter(tweet)
-   tweet[0..136] + "..."
-  else
-   tweet
-  end
+      tweet =  word_substituter(tweet)
+      tweet[0..136] + "..."
+    else
+      tweet
+    end
   end 
